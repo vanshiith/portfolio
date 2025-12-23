@@ -64,25 +64,31 @@ export class MemStorage implements IStorage {
       this.projects.set(index + 1, { ...p, id: index + 1 });
     });
 
-    // Seed Experience
+    // Seed Experience - PM-focused roles from LinkedIn
     const experienceData = [
       {
-        role: "Product Management Intern",
-        company: "TechFlow Systems",
-        duration: "May 2024 - Aug 2024",
-        description: "Collaborated with engineering and design teams to launch a new feature that increased user engagement by 15%. Conducted user research and competitive analysis to inform product strategy.",
+        role: "Growth",
+        company: "Outhad AI",
+        duration: "October 2025 - Present",
+        description: "Led go-to-market strategy across email, LinkedIn, and webinars, increasing discovery calls by 35%. Ran A/B messaging experiments improving lead-to-call conversion by 25%. Defined ICPs through market research and enabled targeted campaigns across new verticals.",
       },
       {
-        role: "Product Analyst",
-        company: "DataDriven Inc",
-        duration: "Jan 2023 - Apr 2024",
-        description: "Analyzed user behavior data using SQL and Python to identify churn drivers. Proposed and implemented UI improvements that reduced drop-off rates by 10%.",
+        role: "Product Manager",
+        company: "First National Bank and Trust",
+        duration: "August 2025 - December 2025",
+        description: "Collected and analyzed performance data for 30+ branches and 130,000+ customer accounts. Conducted 25 stakeholder interviews and partnered cross-functionally to develop roadmap targeting 22% OPEX reduction and 19% ROI lift. Identified workflow bottleneck and built automation solution for fraud team.",
       },
       {
-        role: "Software Engineering Fellow",
-        company: "Headstarter AI",
-        duration: "Jun 2022 - Aug 2022",
-        description: "Built and deployed 5 AI projects in 5 weeks. Gained hands-on experience with modern tech stack and agile development methodologies.",
+        role: "Strategy and Insights",
+        company: "BVK",
+        duration: "June 2025 - August 2025",
+        description: "Conducted 15+ stakeholder/SME interviews and competitive scans. Synthesized insights into personas, value propositions, and positioning frameworks for healthcare, travel, and higher-ed clients. Built weekly performance dashboards and translated learnings into exec-ready narratives.",
+      },
+      {
+        role: "ML/NLP Research Assistant",
+        company: "Beloit College",
+        duration: "August 2024 - May 2025",
+        description: "Analyzed French translations using NLP techniques, boosting stylistic accuracy by 15%. Built OCR model with 95% accuracy for digitizing ancient texts. Developed multilingual comparison model using Universal Sentence Encoder.",
       }
     ];
 
@@ -93,14 +99,14 @@ export class MemStorage implements IStorage {
     // Seed Education
     const educationData = [
       {
-        degree: "Bachelor of Technology",
-        school: "Jawahar Navodaya Vidyalaya",
-        year: "2020 - 2024",
+        degree: "Bachelor of Arts - Computer Science",
+        school: "Beloit College",
+        year: "2022 - 2026",
       },
       {
-        degree: "Product Management Certification",
-        school: "Product School",
-        year: "2023",
+        degree: "Physics, Chemistry, Maths, Computer Science",
+        school: "Jawahar Navodaya Vidyalaya (JNV)",
+        year: "2015 - 2022",
       }
     ];
 
