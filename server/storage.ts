@@ -128,7 +128,7 @@ export class MemStorage implements IStorage {
       },
       {
         category: "Technical",
-        items: ["React", "Next.js", "TypeScript", "Node.js", "FastAPI", "PostgreSQL", "REST APIs", "Docker", "AWS", "Figma", "AI Integration", "CI/CD"],
+        items: ["React", "Next.js", "TypeScript", "Node.js", "FastAPI", "PostgreSQL", "REST APIs", "Docker", "AWS", "Figma", "GPT-4", "AI Integration", "Prompt Engineering", "CI/CD"],
       },
       {
         category: "Core",

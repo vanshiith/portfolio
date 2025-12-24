@@ -38,15 +38,15 @@ export default function Home() {
             </h2>
             
             <p className="text-lg md:text-xl max-w-3xl mb-6 font-sans leading-relaxed border-l-4 border-primary pl-6 py-2 bg-white/50">
-              I sit comfortably between people and systems. I started learning to build the scrappy way—working with my dad on a snack business in India, talking directly to customers, testing ideas, and figuring things out as we went. That taught me strategy grounded in real behavior, not theory.
+              I sit comfortably between people and systems. I started learning to build the scrappy way, working with my dad on a snack business in India, talking directly to customers, testing ideas, and figuring things out as we went. That taught me strategy grounded in real behavior, not theory.
             </p>
             
             <p className="text-lg md:text-xl max-w-3xl mb-6 font-sans leading-relaxed border-l-4 border-primary pl-6 py-2 bg-white/50">
-              I lean just as hard into the technical side. I enjoy breaking down problems, working with data, and building simple tools to make ideas real. For me, creativity and technical thinking aren't separate lanes—the best work happens when insight, logic, and execution come together.
+              I lean just as hard into the technical side. I enjoy breaking down problems, working with data, and building simple tools to make ideas real. For me, creativity and technical thinking aren't separate lanes. The best work happens when insight, logic, and execution come together.
             </p>
             
             <p className="text-lg md:text-xl max-w-3xl mb-10 font-sans leading-relaxed border-l-4 border-primary pl-6 py-2 bg-white/50">
-              Outside of this, I spend time on filmmaking and photography, which sharpens how I observe culture and human moments. Right now, I'm interested in building products and experiences that are thoughtful, useful, and well-designed—both emotionally and technically.
+              Outside of this, I spend time on filmmaking and photography, which sharpens how I observe culture and human moments. Right now, I'm interested in building products and experiences that are thoughtful, useful, and well-designed, both emotionally and technically.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -172,11 +172,11 @@ export default function Home() {
                 transition={{ delay: idx * 0.1 }}
                 className="border-2 border-black p-6 bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
               >
-                <div className="flex justify-between items-start mb-2">
+                <div className="flex justify-between items-start mb-4">
                   <h3 className="text-lg font-bold">{edu.school}</h3>
                   <span className="text-sm bg-accent px-2 py-1 font-bold border border-black">{edu.year}</span>
                 </div>
-                <p className="text-gray-700 font-sans font-medium">{edu.degree}</p>
+                <p className="text-gray-700 font-sans italic">{edu.degree}</p>
               </motion.div>
             ))}
              {education?.length === 0 && (
