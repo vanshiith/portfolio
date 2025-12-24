@@ -16,7 +16,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground font-mono selection:bg-primary selection:text-white overflow-x-hidden">
       
       {/* Hero Section */}
-      <header className="min-h-[90vh] flex flex-col justify-center relative border-b-2 border-black px-4 bg-[#f8f8f0]">
+      <header className="min-h-[90vh] flex flex-col justify-center relative border-b-2 border-black px-4 pb-16 bg-[#f8f8f0]">
         <div className="container mx-auto max-w-5xl relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
