@@ -110,12 +110,7 @@ export class MemStorage implements IStorage {
     // Seed Education
     const educationData = [
       {
-        degree: "Bachelor of Arts - Business Management and Computer Science",
-        school: "Beloit College",
-        year: "2022 - 2026",
-      },
-      {
-        degree: "Extracurriculars: Men's Varsity Track and Field, Beloit Marketing Club, Vertex Data Science Club, Asia Pacific Student Association",
+        degree: "Bachelor of Arts - Business Management & Computer Science | Men's Varsity Track & Field, Marketing Club, Data Science Club, Asia Pacific Student Association",
         school: "Beloit College",
         year: "2022 - 2026",
       }
@@ -129,15 +124,15 @@ export class MemStorage implements IStorage {
     const skillsData = [
       {
         category: "Product",
-        items: ["Product Strategy", "Roadmapping", "Market Research", "Data-Driven Decisions", "Stakeholder Communication", "Go-to-Market", "Analytics & Experimentation"],
+        items: ["Product Strategy", "Roadmapping", "Go-to-Market", "Market Research", "Competitive Analysis", "Data-Driven Decisions", "Analytics & Experimentation", "User Research", "Stakeholder Communication"],
       },
       {
         category: "Technical",
-        items: ["React", "Next.js", "REST APIs", "Node.js", "FastAPI", "PostgreSQL", "Docker", "AWS", "CI/CD"],
+        items: ["React", "Next.js", "TypeScript", "Node.js", "FastAPI", "PostgreSQL", "REST APIs", "Docker", "AWS", "Figma", "AI Integration", "CI/CD"],
       },
       {
-        category: "Skills",
-        items: ["Problem Solving", "Storytelling", "Cross-Functional Leadership", "Prioritization", "User Research"],
+        category: "Core",
+        items: ["Problem Solving", "Storytelling", "Leadership", "Prioritization", "Agile", "Customer Interviews", "Data Analysis", "Rapid Prototyping"],
       },
     ];
 

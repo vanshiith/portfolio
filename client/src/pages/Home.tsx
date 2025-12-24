@@ -34,19 +34,29 @@ export default function Home() {
             
             <h2 className="text-xl md:text-3xl font-bold mb-8 flex items-center gap-3">
               <span className="w-8 h-1 bg-primary block"></span>
-              ASPIRING PRODUCT MANAGER
+              PRODUCT MANAGER & BUILDER
             </h2>
             
-            <p className="text-lg md:text-xl max-w-2xl mb-10 font-sans leading-relaxed border-l-4 border-primary pl-6 py-2 bg-white/50">
-              Building bridges between technical complexity and user delight. 
-              Passionate about product strategy, user research, and agile execution.
+            <p className="text-lg md:text-xl max-w-3xl mb-6 font-sans leading-relaxed border-l-4 border-primary pl-6 py-2 bg-white/50">
+              I sit comfortably between people and systems. I started learning to build the scrappy way—working with my dad on a snack business in India, talking directly to customers, testing ideas, and figuring things out as we went. That taught me strategy grounded in real behavior, not theory.
+            </p>
+            
+            <p className="text-lg md:text-xl max-w-3xl mb-6 font-sans leading-relaxed border-l-4 border-primary pl-6 py-2 bg-white/50">
+              I lean just as hard into the technical side. I enjoy breaking down problems, working with data, and building simple tools to make ideas real. For me, creativity and technical thinking aren't separate lanes—the best work happens when insight, logic, and execution come together.
+            </p>
+            
+            <p className="text-lg md:text-xl max-w-3xl mb-10 font-sans leading-relaxed border-l-4 border-primary pl-6 py-2 bg-white/50">
+              Outside of this, I spend time on filmmaking and photography, which sharpens how I observe culture and human moments. Right now, I'm interested in building products and experiences that are thoughtful, useful, and well-designed—both emotionally and technically.
             </p>
             
             <div className="flex flex-wrap gap-4">
               <a href="#projects" className="retro-btn bg-primary text-white hover:bg-black hover:text-white">
                 VIEW PROJECTS
               </a>
-              <a href="https://www.linkedin.com/in/vanshith" target="_blank" rel="noopener noreferrer" className="retro-btn">
+              <a href="https://drive.google.com/drive/folders/1jW8_gLGCxxdepbaBJxEsLPfM3WYihatA?usp=sharing" target="_blank" rel="noopener noreferrer" className="retro-btn">
+                RESUME
+              </a>
+              <a href="https://linkedin.com/in/vanshith" target="_blank" rel="noopener noreferrer" className="retro-btn">
                 LINKEDIN
               </a>
             </div>
@@ -78,7 +88,7 @@ export default function Home() {
             ))}
           </div>
         ) : (
-          <div className="space-y-2">
+          <div className="space-y-8">
             {experience?.map((exp, idx) => (
               <ExperienceItem key={exp.id} experience={exp} index={idx} />
             ))}
@@ -89,6 +99,13 @@ export default function Home() {
                 <p>No experience entries found.</p>
               </div>
             )}
+            
+            <div className="border-2 border-black p-6 bg-accent shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+              <p className="mb-4 font-mono text-sm">Want a more holistic view of my professional journey?</p>
+              <a href="https://linkedin.com/in/vanshith" target="_blank" rel="noopener noreferrer" className="inline-block bg-black text-white px-4 py-2 font-bold border-2 border-black hover:bg-primary transition-colors">
+                VISIT LINKEDIN →
+              </a>
+            </div>
           </div>
         )}
       </Section>
@@ -183,7 +200,7 @@ export default function Home() {
             
             <div className="flex gap-4">
               <a 
-                href="https://www.linkedin.com/in/vanshith" 
+                href="https://linkedin.com/in/vanshith" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-white text-black p-3 hover:bg-primary hover:text-white transition-colors border-2 border-white hover:border-primary shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)]"
@@ -191,7 +208,7 @@ export default function Home() {
                 <Linkedin size={24} />
               </a>
               <a 
-                href="mailto:contact@vanshith.com" 
+                href="mailto:bhandarivanshith@gmail.com" 
                 className="bg-white text-black p-3 hover:bg-primary hover:text-white transition-colors border-2 border-white hover:border-primary shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)]"
               >
                 <Mail size={24} />
