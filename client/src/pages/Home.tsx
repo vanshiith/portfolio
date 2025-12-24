@@ -176,7 +176,8 @@ export default function Home() {
                   <h3 className="text-lg font-bold">{edu.school}</h3>
                   <span className="text-sm bg-accent px-2 py-1 font-bold border border-black">{edu.year}</span>
                 </div>
-                <p className="text-gray-700 font-sans italic">{edu.degree}</p>
+                <p className="text-gray-700 font-sans italic mb-3">{edu.degree}</p>
+                <p className="text-gray-700 font-sans">Extracurriculars: Men's Varsity Track & Field, Marketing Club, Data Science Club, Asia Pacific Student Association</p>
               </motion.div>
             ))}
              {education?.length === 0 && (

@@ -110,11 +110,14 @@ export class MemStorage implements IStorage {
     // Seed Education
     const educationData = [
       {
-        degree: "Bachelor of Arts - Business Management & Computer Science | Men's Varsity Track & Field, Marketing Club, Data Science Club, Asia Pacific Student Association",
+        degree: "Bachelor of Arts - Business Management & Computer Science",
         school: "Beloit College",
         year: "2022 - 2026",
       }
     ];
+
+    // Note: Extracurriculars stored separately for display flexibility
+    const educationExtracurriculars = "Extracurriculars: Men's Varsity Track & Field, Marketing Club, Data Science Club, Asia Pacific Student Association";
 
     educationData.forEach((e, index) => {
       this.education.set(index + 1, { ...e, id: index + 1 });
