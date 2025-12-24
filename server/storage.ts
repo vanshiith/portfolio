@@ -41,22 +41,34 @@ export class MemStorage implements IStorage {
     // Seed Projects
     const projectsData = [
       {
-        title: "Product Roadmap Visualizer",
-        description: "A comprehensive tool designed to help product managers visualize and share their product roadmaps with stakeholders. Built with React and D3.js.",
-        driveLink: "https://drive.google.com/drive/u/0/",
-        githubLink: "https://github.com",
+        title: "Sipit",
+        description: "A product-led social discovery app that blends local café recommendations with community building. Users rate cafés across key experience metrics and log visits through reviews or gallery posts. A built-in incentive loop rewards engagement by unlocking real-world social connections every 10 visits, turning discovery into habit and community into retention.",
+        driveLink: "https://www.figma.com/proto/YK3nh9gcOugxTWlZFMD8S0/Sip-It?node-id=50-28109&t=GpDqa89GtJ7PVXVR-1",
+        githubLink: null,
       },
       {
-        title: "User Feedback Analyzer",
-        description: "An AI-powered dashboard that aggregates and analyzes user feedback from multiple sources to provide actionable insights. Uses NLP for sentiment analysis.",
-        driveLink: "https://drive.google.com/drive/u/0/",
-        githubLink: "https://github.com",
+        title: "SortMyMail",
+        description: "An AI-powered Gmail organizer that automatically classifies emails into custom categories like newsletters, receipts, and client work while keeping users fully in control. Uses GPT-4o-mini to analyze inbox activity and propose label suggestions with a transparent 'AI suggests, you decide' workflow. Built with Next.js, FastAPI, PostgreSQL, and Gmail API.",
+        driveLink: "https://docs.google.com/presentation/d/1FrZI4BZOhO7Igjr_FNk_BsjLEcZkyTBdl-lQBBfnGjw/edit?usp=sharing",
+        githubLink: "https://github.com/vanshiith/sortmymail.ai",
       },
       {
-        title: "Agile Sprint Planner",
-        description: "A minimalist sprint planning tool focused on velocity tracking and capacity planning. Features drag-and-drop interface and automated reporting.",
-        driveLink: "https://drive.google.com/drive/u/0/",
-        githubLink: "https://github.com",
+        title: "BetOnMe",
+        description: "A habit-tracking web app that uses financial commitment contracts to close the gap between users' intentions and actions. Users create custom habits, assign real monetary stakes, and face automatic donations to charity when they miss check-ins, leveraging behavioral economics principles to increase follow-through. Built with Next.js, Supabase, and automated email/cron systems.",
+        driveLink: "https://docs.google.com/presentation/d/1AfX_YfQQAt2qAVYjJgUzRexZCTpNKttNKe_tPjYRlKY/edit?usp=sharing",
+        githubLink: "https://github.com/vanshiith/bet-on-me",
+      },
+      {
+        title: "BVK - Future Urban Leaders Brand Strategy",
+        description: "Led a two-week brand strategy sprint for a nonprofit to clarify positioning and unlock donor interest. Conducted stakeholder interviews, audience research, and competitive analysis to identify core problems and define clear value propositions. Translated insights into positioning, messaging framework, and campaign assets for immediate use in driving partnerships and funding.",
+        driveLink: "https://drive.google.com/file/d/1ohg0ybbURmwxM99UP5sGYIMdsEdfOB6g/view?usp=sharing",
+        githubLink: null,
+      },
+      {
+        title: "Juiced! Cold Pressed Juicery - Strategy",
+        description: "Led a fast, insight-driven brand and go-to-market sprint to improve retail clarity and sales momentum. Conducted customer interviews, in-store observations, and competitive scans to identify friction in assortment, pricing, and messaging. Delivered positioning, partner-facing sales tools, and promotion recommendations that improved sell-through and made the brand easier for retailers and customers.",
+        driveLink: "https://drive.google.com/drive/folders/1tgrSPEw2ephLzktyyoyYH83ciVcPJkkr?usp=sharing",
+        githubLink: null,
       },
     ];
 
@@ -67,28 +79,22 @@ export class MemStorage implements IStorage {
     // Seed Experience - PM-focused roles from LinkedIn
     const experienceData = [
       {
-        role: "Growth",
+        role: "GTM Manager",
         company: "Outhad AI",
         duration: "October 2025 - Present",
-        description: "Led go-to-market strategy across email, LinkedIn, and webinars, increasing discovery calls by 35%. Ran A/B messaging experiments improving lead-to-call conversion by 25%. Defined ICPs through market research and enabled targeted campaigns across new verticals.",
+        description: "I treated every channel like an experiment. Ran A/B tests, tracked what actually moved the needle, then doubled down. That systematic approach drove a 35% lift in discovery calls and helped us break into two entirely new verticals. I don't just execute campaigns; I find the markets and figure out how to win them.",
       },
       {
         role: "Product Manager",
-        company: "First National Bank and Trust",
+        company: "First National Bank & Trust Company",
         duration: "August 2025 - December 2025",
-        description: "Collected and analyzed performance data for 30+ branches and 130,000+ customer accounts. Conducted 25 stakeholder interviews and partnered cross-functionally to develop roadmap targeting 22% OPEX reduction and 19% ROI lift. Identified workflow bottleneck and built automation solution for fraud team.",
+        description: "I walked into a complex problem: 30 branches, 130K customers, and no clear path forward. Built the dashboards, interviewed 25 stakeholders, modeled the scenarios, and delivered a roadmap projecting 22% OPEX cuts and 19% ROI lift. Then I spotted the fraud team drowning in manual work, built them an automation, and shipped it. I think strategically, but I also get things done.",
       },
       {
-        role: "Strategy and Insights",
-        company: "BVK",
+        role: "Strategy & Insights Intern",
+        company: "BVK Associates",
         duration: "June 2025 - August 2025",
-        description: "Conducted 15+ stakeholder/SME interviews and competitive scans. Synthesized insights into personas, value propositions, and positioning frameworks for healthcare, travel, and higher-ed clients. Built weekly performance dashboards and translated learnings into exec-ready narratives.",
-      },
-      {
-        role: "ML/NLP Research Assistant",
-        company: "Beloit College",
-        duration: "August 2024 - May 2025",
-        description: "Analyzed French translations using NLP techniques, boosting stylistic accuracy by 15%. Built OCR model with 95% accuracy for digitizing ancient texts. Developed multilingual comparison model using Universal Sentence Encoder.",
+        description: "I had 2 weeks to turn client ambiguity into complete brand strategies. Through 15+ rapid interviews and competitive research, I synthesized the noise into positioning frameworks that worked across healthcare, travel, and higher-ed. Then I made sure it mattered: built enablement docs, tracked performance, and turned data into narratives that shifted real budget decisions. I move fast through uncertainty and make strategy actionable.",
       }
     ];
 
@@ -99,14 +105,14 @@ export class MemStorage implements IStorage {
     // Seed Education
     const educationData = [
       {
-        degree: "Bachelor of Arts - Computer Science",
+        degree: "Bachelor of Arts - Business Management and Computer Science",
         school: "Beloit College",
         year: "2022 - 2026",
       },
       {
-        degree: "Physics, Chemistry, Maths, Computer Science",
-        school: "Jawahar Navodaya Vidyalaya (JNV)",
-        year: "2015 - 2022",
+        degree: "Extracurriculars: Men's Varsity Track and Field, Beloit Marketing Club, Vertex Data Science Club, Asia Pacific Student Association",
+        school: "Beloit College",
+        year: "2022 - 2026",
       }
     ];
 
