@@ -46,7 +46,7 @@ export class MemStorage implements IStorage {
     // Seed Projects
     const projectsData = [
       {
-        title: "Sipit",
+        title: "Sipit (Currently Working)",
         description: "A product-led social discovery app that blends local café recommendations with community building. Users rate cafés across key experience metrics and log visits through reviews or gallery posts. A built-in incentive loop rewards engagement by unlocking real-world social connections every 10 visits, turning discovery into habit and community into retention.",
         driveLink: "https://www.figma.com/proto/YK3nh9gcOugxTWlZFMD8S0/Sip-It?node-id=50-28109&t=GpDqa89GtJ7PVXVR-1",
         githubLink: null,
