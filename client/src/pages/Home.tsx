@@ -1,14 +1,16 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Mail, Linkedin, FileText, Code, Database, Users } from "lucide-react";
-import { useProjects, useExperience, useEducation } from "@/hooks/use-portfolio";
+import { ArrowDown, Mail, Linkedin, FileText, Code, Database, Users, Zap } from "lucide-react";
+import { useProjects, useExperience, useEducation, useSkills } from "@/hooks/use-portfolio";
 import { Section } from "@/components/Section";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ExperienceItem } from "@/components/ExperienceItem";
+import { SkillsSection } from "@/components/SkillsSection";
 
 export default function Home() {
   const { data: projects, isLoading: projectsLoading } = useProjects();
   const { data: experience, isLoading: experienceLoading } = useExperience();
   const { data: education, isLoading: educationLoading } = useEducation();
+  const { data: skills, isLoading: skillsLoading } = useSkills();
 
   return (
     <div className="min-h-screen bg-background text-foreground font-mono selection:bg-primary selection:text-white overflow-x-hidden">
@@ -111,6 +113,28 @@ export default function Home() {
               </div>
             )}
           </div>
+        )}
+      </Section>
+
+      {/* Skills Section */}
+      <Section id="skills" title="SKILL_SET">
+        {skillsLoading ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-pulse">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="h-48 bg-gray-200 rounded border-2 border-gray-300"></div>
+            ))}
+          </div>
+        ) : (
+          <>
+            {skills && skills.length > 0 ? (
+              <SkillsSection skills={skills} />
+            ) : (
+              <div className="text-center py-12 border-2 border-dashed border-black bg-white p-8">
+                <Zap className="mx-auto w-12 h-12 text-gray-400 mb-4" />
+                <p>No skills loaded.</p>
+              </div>
+            )}
+          </>
         )}
       </Section>
 
