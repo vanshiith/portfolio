@@ -3,11 +3,13 @@ import {
   projects,
   experience,
   education,
+  skills,
   type User,
   type InsertUser,
   type Project,
   type Experience,
-  type Education
+  type Education,
+  type Skill
 } from "@shared/schema";
 
 export interface IStorage {
@@ -18,6 +20,7 @@ export interface IStorage {
   getProjects(): Promise<Project[]>;
   getExperience(): Promise<Experience[]>;
   getEducation(): Promise<Education[]>;
+  getSkills(): Promise<Skill[]>;
 }
 
 export class MemStorage implements IStorage {
@@ -25,6 +28,7 @@ export class MemStorage implements IStorage {
   private projects: Map<number, Project>;
   private experience: Map<number, Experience>;
   private education: Map<number, Education>;
+  private skills: Map<number, Skill>;
   private currentId: number;
 
   constructor() {
@@ -32,6 +36,7 @@ export class MemStorage implements IStorage {
     this.projects = new Map();
     this.experience = new Map();
     this.education = new Map();
+    this.skills = new Map();
     this.currentId = 1;
 
     this.seedData();
@@ -119,6 +124,26 @@ export class MemStorage implements IStorage {
     educationData.forEach((e, index) => {
       this.education.set(index + 1, { ...e, id: index + 1 });
     });
+
+    // Seed Skills
+    const skillsData = [
+      {
+        category: "Product",
+        items: ["Product Strategy", "Roadmapping", "Market Research", "Data-Driven Decisions", "Stakeholder Communication", "Go-to-Market", "Analytics & Experimentation"],
+      },
+      {
+        category: "Technical",
+        items: ["React", "Next.js", "REST APIs", "Node.js", "FastAPI", "PostgreSQL", "Docker", "AWS", "CI/CD"],
+      },
+      {
+        category: "Skills",
+        items: ["Problem Solving", "Storytelling", "Cross-Functional Leadership", "Prioritization", "User Research"],
+      },
+    ];
+
+    skillsData.forEach((s, index) => {
+      this.skills.set(index + 1, { ...s, id: index + 1 });
+    });
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -148,6 +173,10 @@ export class MemStorage implements IStorage {
 
   async getEducation(): Promise<Education[]> {
     return Array.from(this.education.values());
+  }
+
+  async getSkills(): Promise<Skill[]> {
+    return Array.from(this.skills.values());
   }
 }
 

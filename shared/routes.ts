@@ -42,6 +42,15 @@ export const api = {
       },
     },
   },
+  skills: {
+    list: {
+      method: 'GET' as const,
+      path: '/api/skills',
+      responses: {
+        200: z.array(z.custom<typeof skills.$inferSelect>()),
+      },
+    },
+  },
 };
 
 export function buildUrl(path: string, params?: Record<string, string | number>): string {

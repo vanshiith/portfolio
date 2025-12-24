@@ -36,3 +36,13 @@ export type InsertExperience = z.infer<typeof insertExperienceSchema>;
 export const insertEducationSchema = createInsertSchema(education);
 export type Education = typeof education.$inferSelect;
 export type InsertEducation = z.infer<typeof insertEducationSchema>;
+
+export const skills = pgTable("skills", {
+  id: serial("id").primaryKey(),
+  category: text("category").notNull(),
+  items: text("items").array().notNull(),
+});
+
+export const insertSkillSchema = createInsertSchema(skills);
+export type Skill = typeof skills.$inferSelect;
+export type InsertSkill = z.infer<typeof insertSkillSchema>;
