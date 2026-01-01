@@ -31,7 +31,6 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
   },
-  base: "/vb-portfolio/",
   server: {
     fs: {
       strict: true,
