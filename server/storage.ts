@@ -1,11 +1,4 @@
 import {
-  users,
-  projects,
-  experience,
-  education,
-  skills,
-  type User,
-  type InsertUser,
   type Project,
   type Experience,
   type Education,
@@ -13,10 +6,6 @@ import {
 } from "@shared/schema";
 
 export interface IStorage {
-  getUser(id: number): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
-  
   getProjects(): Promise<Project[]>;
   getExperience(): Promise<Experience[]>;
   getEducation(): Promise<Education[]>;
@@ -24,20 +13,16 @@ export interface IStorage {
 }
 
 export class MemStorage implements IStorage {
-  private users: Map<number, User>;
   private projects: Map<number, Project>;
   private experience: Map<number, Experience>;
   private education: Map<number, Education>;
   private skills: Map<number, Skill>;
-  private currentId: number;
 
   constructor() {
-    this.users = new Map();
     this.projects = new Map();
     this.experience = new Map();
     this.education = new Map();
     this.skills = new Map();
-    this.currentId = 1;
 
     this.seedData();
   }
@@ -148,23 +133,6 @@ export class MemStorage implements IStorage {
     skillsData.forEach((s, index) => {
       this.skills.set(index + 1, { ...s, id: index + 1 });
     });
-  }
-
-  async getUser(id: number): Promise<User | undefined> {
-    return this.users.get(id);
-  }
-
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
-  }
-
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = this.currentId++;
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
   }
 
   async getProjects(): Promise<Project[]> {
