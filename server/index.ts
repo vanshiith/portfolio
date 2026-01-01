@@ -83,24 +83,17 @@ async function setupApp() {
   return app;
 }
 
-// For Vercel serverless
-if (process.env.VERCEL) {
-  setupApp().then(() => {
-    // Export the app for serverless
-    module.exports = app;
-  });
-} else {
-  // For local development and traditional deployment
-  setupApp().then(() => {
-    const port = parseInt(process.env.PORT || "5000", 10);
-    httpServer.listen(
-      {
-        port,
-        host: "0.0.0.0",
-      },
-      () => {
-        log(`serving on port ${port}`);
-      },
-    );
-  });
-}
+(async () => {
+  await setupApp();
+
+  const port = parseInt(process.env.PORT || "5000", 10);
+  httpServer.listen(
+    {
+      port,
+      host: "0.0.0.0",
+    },
+    () => {
+      log(`serving on port ${port}`);
+    },
+  );
+})();
