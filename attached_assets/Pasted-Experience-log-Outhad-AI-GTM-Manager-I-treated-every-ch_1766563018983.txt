@@ -1,0 +1,39 @@
+Experience log:
+Outhad AI - GTM Manager I treated every channel like an experiment. Ran A/B tests, tracked what actually moved the needle, then doubled down. That systematic approach drove a 35% lift in discovery calls and helped us break into two entirely new verticals. I don't just execute campaigns; I find the markets and figure out how to win them.
+First National Bank & Trust Company - Product Manager Intern I walked into a complex problem: 30 branches, 130K customers, and no clear path forward. Built the dashboards, interviewed 25 stakeholders, modeled the scenarios, and delivered a roadmap projecting 22% OPEX cuts and 19% ROI lift. Then I spotted the fraud team drowning in manual work, built them an automation, and shipped it. I think strategically, but I also get things done.
+BVK Associates - Strategy & Insights Intern I had 2 weeks to turn client ambiguity into complete brand strategies. Through 15+ rapid interviews and competitive research, I synthesized the noise into positioning frameworks that worked across healthcare, travel, and higher-ed. Then I made sure it mattered: built enablement docs, tracked performance, and turned data into narratives that shifted real budget decisions. I move fast through uncertainty and make strategy actionable.
+
+Projects: 
+Sipit (Currently working): 
+Prototype:https://www.figma.com/proto/YK3nh9gcOugxTWlZFMD8S0/Sip-It?node-id=50-28109&t=GpDqa89GtJ7PVXVR-1
+Description: SipIt is a product-led social discovery app that blends local café recommendations with community building. Users rate cafés across key experience metrics and log visits through reviews or gallery posts. A built-in incentive loop rewards engagement by unlocking real-world social connections every 10 visits, turning discovery into habit and community into retention.
+
+
+SortMyMail: Desc: SortMyMail is an AI-powered Gmail organizer that automatically classifies emails into custom categories like newsletters, receipts, and client work while keeping users fully in control. It uses GPT-4o-mini to analyze recent inbox activity, propose label suggestions, and then lets users approve, override, or undo changes with a transparent “AI suggests, you decide” workflow. Built with Next.js, FastAPI, PostgreSQL, and the Gmail API
+Github: https://github.com/vanshiith/sortmymail.ai
+Deck: https://docs.google.com/presentation/d/1FrZI4BZOhO7Igjr_FNk_BsjLEcZkyTBdl-lQBBfnGjw/edit?usp=sharing
+
+
+BetOnMe:
+Github: https://github.com/vanshiith/bet-on-me
+Deck: https://docs.google.com/presentation/d/1AfX_YfQQAt2qAVYjJgUzRexZCTpNKttNKe_tPjYRlKY/edit?usp=sharing 
+Description: BetOnMe is a habit-tracking web app that uses financial commitment contracts to close the gap between users’ intentions and actions, inspired by research on commitment devices and loss aversion. Users create custom habits, assign real monetary stakes, and face automatic donations to charity when they miss check-ins, leveraging proven behavioral economics principles to increase follow-through. Built with Next.js, Supabase, and automated email/cron systems
+
+
+BVK - Future Urban Leaders Brand Strategy: Desc: Led a two week brand strategy sprint for Future Urban Leaders to clarify positioning and unlock donor interest in a crowded nonprofit space. Conducted stakeholder interviews, audience research, and competitive analysis to identify the core problem and define a clear value proposition. Translated insights into a focused positioning, messaging framework, and campaign assets that the team could immediately use to drive partnerships and funding.
+Deck: https://drive.google.com/file/d/1ohg0ybbURmwxM99UP5sGYIMdsEdfOB6g/view?usp=sharing
+No github for this
+
+
+Juiced! Cold Pressed Juicery - Strategy
+Desc: Led a fast, insight driven brand and go to market sprint for Juiced! to improve retail clarity and sales momentum. Conducted customer interviews, in store observations, and competitive scans to identify friction in assortment, pricing, and messaging. Turned findings into clear positioning, partner facing sales tools, and promotion recommendations that improved sell through and made the brand easier for retailers to carry and customers to understand.
+Deck: https://drive.google.com/drive/folders/1tgrSPEw2ephLzktyyoyYH83ciVcPJkkr?usp=sharing 
+No github for this
+
+Education: Get rid of Jawahar Navodaya Vidyalaya
+For for Beloit College - say Bachelor of Arts, Business Management and Computer Science
+Within Beloit, I want you to include extracurriculars: 
+Men’s Varsity Track and Field, Beloit Marketing Club, Vertex Data Science Club, Asia Pacific Student Association. 
+
+
+
