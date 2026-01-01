@@ -46,10 +46,16 @@ export class MemStorage implements IStorage {
     // Seed Projects
     const projectsData = [
       {
-        title: "Sipit (Currently Working)",
+        title: "Sipit (Work in Progress)",
         description: "A product-led social discovery app that blends local café recommendations with community building. Users rate cafés across key experience metrics and log visits through reviews or gallery posts. A built-in incentive loop rewards engagement by unlocking real-world social connections every 10 visits, turning discovery into habit and community into retention.",
         driveLink: "https://www.figma.com/proto/YK3nh9gcOugxTWlZFMD8S0/Sip-It?node-id=50-28109&t=GpDqa89GtJ7PVXVR-1",
         githubLink: null,
+      },
+      {
+        title: "Daily Dose of Discomfort",
+        description: "Daily Dose of Discomfort is a lightweight habit-building product designed to help people build consistency by taking one small, intentionally uncomfortable action each day and logging it as proof of the identity they want to become. Instead of relying on motivation, streaks, or gamification, the product focuses on recovery after lapses and cumulative progress that never resets. By reframing discomfort as practice and missed days as normal pauses rather than failures, Daily Dose of Discomfort helps users follow through more reliably, build self-trust, and develop a resilient sense of discipline through action rather than perfection.",
+        driveLink: "https://docs.google.com/presentation/d/1Uqmer2SHtuH1358KXAQd3PBnbc-aTsex55c0f504e9w/edit?usp=sharing",
+        githubLink: "https://github.com/vanshiith/daily-dose-of-discomfort",
       },
       {
         title: "SortMyMail",
