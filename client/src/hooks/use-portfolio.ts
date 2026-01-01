@@ -1,14 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
-import { api } from "@shared/routes";
+import { mockProjects, mockExperience, mockEducation, mockSkills } from "@/data/portfolio-data";
 
 // Projects Hook
 export function useProjects() {
   return useQuery({
-    queryKey: [api.projects.list.path],
+    queryKey: ["projects"],
     queryFn: async () => {
-      const res = await fetch(api.projects.list.path);
-      if (!res.ok) throw new Error("Failed to fetch projects");
-      return api.projects.list.responses[200].parse(await res.json());
+      // Simulate async behavior for consistency
+      await new Promise(resolve => setTimeout(resolve, 100));
+      return mockProjects;
     },
   });
 }
@@ -16,11 +16,10 @@ export function useProjects() {
 // Experience Hook
 export function useExperience() {
   return useQuery({
-    queryKey: [api.experience.list.path],
+    queryKey: ["experience"],
     queryFn: async () => {
-      const res = await fetch(api.experience.list.path);
-      if (!res.ok) throw new Error("Failed to fetch experience");
-      return api.experience.list.responses[200].parse(await res.json());
+      await new Promise(resolve => setTimeout(resolve, 100));
+      return mockExperience;
     },
   });
 }
@@ -28,11 +27,10 @@ export function useExperience() {
 // Education Hook
 export function useEducation() {
   return useQuery({
-    queryKey: [api.education.list.path],
+    queryKey: ["education"],
     queryFn: async () => {
-      const res = await fetch(api.education.list.path);
-      if (!res.ok) throw new Error("Failed to fetch education");
-      return api.education.list.responses[200].parse(await res.json());
+      await new Promise(resolve => setTimeout(resolve, 100));
+      return mockEducation;
     },
   });
 }
@@ -40,11 +38,10 @@ export function useEducation() {
 // Skills Hook
 export function useSkills() {
   return useQuery({
-    queryKey: [api.skills.list.path],
+    queryKey: ["skills"],
     queryFn: async () => {
-      const res = await fetch(api.skills.list.path);
-      if (!res.ok) throw new Error("Failed to fetch skills");
-      return api.skills.list.responses[200].parse(await res.json());
+      await new Promise(resolve => setTimeout(resolve, 100));
+      return mockSkills;
     },
   });
 }
