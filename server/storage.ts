@@ -43,6 +43,12 @@ export class MemStorage implements IStorage {
         githubLink: "https://github.com/vanshiith/daily-dose-of-discomfort",
       },
       {
+        title: "Speed Reader",
+        description: "A research-backed mobile app that helps users develop speed reading skills using RSVP (Rapid Serial Visual Presentation) with ORP (Optimal Recognition Point) highlighting. Users import text files, track reading progress across their library, and adjust speed from 100-600 WPM while the app highlights the optimal recognition point to help the brain process words faster. Includes comprehension quizzes to validate understanding at higher speeds. Built with React Native, Expo, Zustand, and SQLite.",
+        driveLink: null,
+        githubLink: "https://github.com/vanshiith/speedreader",
+      },
+      {
         title: "SortMyMail",
         description: "An AI-powered Gmail organizer that automatically classifies emails into custom categories like newsletters, receipts, and client work while keeping users fully in control. Uses GPT-4o-mini to analyze inbox activity and propose label suggestions with a transparent 'AI suggests, you decide' workflow. Built with Next.js, FastAPI, PostgreSQL, and Gmail API.",
         driveLink: "https://docs.google.com/presentation/d/1FrZI4BZOhO7Igjr_FNk_BsjLEcZkyTBdl-lQBBfnGjw/edit?usp=sharing",

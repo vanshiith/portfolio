@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { insertProjectSchema, insertExperienceSchema, insertEducationSchema, projects, experience, education, skills } from './schema';
+import { insertProjectSchema, insertExperienceSchema, insertEducationSchema, projects, experience, education } from './schema';
 
 export const errorSchemas = {
   validation: z.object({
@@ -14,43 +14,13 @@ export const errorSchemas = {
   }),
 };
 
-// Response schemas
-const projectSchema = z.object({
-  id: z.number(),
-  title: z.string(),
-  description: z.string(),
-  driveLink: z.string().nullable(),
-  githubLink: z.string().nullable(),
-});
-
-const experienceSchema = z.object({
-  id: z.number(),
-  role: z.string(),
-  company: z.string(),
-  duration: z.string(),
-  description: z.string(),
-});
-
-const educationSchema = z.object({
-  id: z.number(),
-  degree: z.string(),
-  school: z.string(),
-  year: z.string(),
-});
-
-const skillSchema = z.object({
-  id: z.number(),
-  category: z.string(),
-  items: z.array(z.string()),
-});
-
 export const api = {
   projects: {
     list: {
       method: 'GET' as const,
       path: '/api/projects',
       responses: {
-        200: z.array(projectSchema),
+        200: z.array(z.custom<typeof projects.$inferSelect>()),
       },
     },
   },
@@ -59,7 +29,7 @@ export const api = {
       method: 'GET' as const,
       path: '/api/experience',
       responses: {
-        200: z.array(experienceSchema),
+        200: z.array(z.custom<typeof experience.$inferSelect>()),
       },
     },
   },
@@ -68,7 +38,7 @@ export const api = {
       method: 'GET' as const,
       path: '/api/education',
       responses: {
-        200: z.array(educationSchema),
+        200: z.array(z.custom<typeof education.$inferSelect>()),
       },
     },
   },
@@ -77,7 +47,7 @@ export const api = {
       method: 'GET' as const,
       path: '/api/skills',
       responses: {
-        200: z.array(skillSchema),
+        200: z.array(z.custom<typeof skills.$inferSelect>()),
       },
     },
   },
